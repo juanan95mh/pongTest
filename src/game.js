@@ -1,4 +1,4 @@
-import { Climbro, Entralpi, ForceBoard, Motherboard, mySmartBoard, Progressor, WHC06 } from "https://cdn.jsdelivr.net/npm/@hangtime/grip-connect@0.6.0/dist/grip-connect.esm.js";
+import { Climbro, Entralpi, ForceBoard, Motherboard, mySmartBoard, Progressor, WHC06 } from "https://cdn.jsdelivr.net/npm/@hangtime/grip-connect@0.6.0/dist/index.js";
 
 let mass;
 let weight = 5;
