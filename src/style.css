@@ -1,0 +1,115 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+#canvas {
+  display: block;
+  margin: auto;
+}
+
+#controller {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#canvas {
+  background-color: #30c0df;
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+#control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 384px;
+}
+
+#control > div {
+  grid-column: span 1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+#error {
+  max-width: 384px;
+  white-space: pre-wrap;
+  justify-content: center;
+  background-color: #898989;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto 0;
+}
+
+button,
+select,
+input {
+  appearance: none;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em;
+  margin-bottom: 0.3rem;
+  margin-top: 0.6rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.25s;
+}
+
+select:hover,
+input:hover {
+  border-color: #646cff;
+}
+
+select:focus,
+select:focus-visible,
+input:focus,
+input:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
